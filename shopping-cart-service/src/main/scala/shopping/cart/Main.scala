@@ -12,6 +12,7 @@ object Main {
   val logger = LoggerFactory.getLogger("shopping.cart.Main")
 
   def main(args: Array[String]): Unit = {
+    // Start an ActorSystem with the Main actor Behavior.
     val system = ActorSystem[Nothing](Behaviors.empty, "ShoppingCartService")
     try {
       init(system)
@@ -22,9 +23,23 @@ object Main {
     }
   }
 
+  //	Initialize the gRPC server. 
   def init(system: ActorSystem[_]): Unit = {
+    // 	Initialization of Akka Management that is used for forming the Akka Cluster.
     AkkaManagement(system).start()
     ClusterBootstrap(system).start()
+
+    val grpcInterface =
+      system.settings.config.getString("shopping-cart-service.grpc.interface")
+    val grpcPort =
+      system.settings.config.getInt("shopping-cart-service.grpc.port")
+    val grpcService = new ShoppingCartServiceImpl
+    ShoppingCartServer.start(
+      grpcInterface,
+      grpcPort,
+      system,
+      grpcService
+    ) 
   }
 
 }

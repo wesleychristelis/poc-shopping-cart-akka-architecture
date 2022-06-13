@@ -1,0 +1,151 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "shopping-cart-akka-architecture",
+        "directory": "/Users/wesleychristelis/Source/shopping-cart-akka-architecture",
+        "workspaceDir": "/Users/wesleychristelis/Source/shopping-cart-akka-architecture",
+        "sources": [
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/src/main/scala",
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/src/main/scala-2.12",
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/src/main/scala-2",
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/src/main/java",
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/target/scala-2.12/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-library.jar"
+        ],
+        "out": "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/.bloop/shopping-cart-akka-architecture",
+        "classesDir": "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/.bloop/shopping-cart-akka-architecture/scala-2.12/classes",
+        "resources": [
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/src/main/resources",
+            "/Users/wesleychristelis/Source/shopping-cart-akka-architecture/target/scala-2.12/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.15",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-library.jar",
+                "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-compiler.jar",
+                "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-reflect.jar",
+                "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-xml_2.12-1.0.6.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/wesleychristelis/.sdkman/candidates/java/17.0.2-tem",
+                "options": [
+                    "-Duser.dir=/Users/wesleychristelis/Source/shopping-cart-akka-architecture"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/wesleychristelis/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.15/scala-library-2.12.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.15",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/wesleychristelis/.sbt/boot/scala-2.12.15/lib/scala-library.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/wesleychristelis/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.15/scala-library-2.12.15-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
